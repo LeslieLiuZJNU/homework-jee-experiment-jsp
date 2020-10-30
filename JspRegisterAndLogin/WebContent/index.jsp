@@ -17,7 +17,7 @@ if(session.getAttribute("loginStatus")==null||!session.getAttribute("loginStatus
 <%
 }else {
 %>
-<h1>You are online! Dear <%=session.getAttribute("cachedUsername") %></h1><br>
+<h1>You are online! Dear <%=session.getAttribute("cachedUsername") %>.</h1><br>
 <a href="modify.jsp"><button>modify</button></a>
 <a href="check-exit.jsp"><button>exit</button></a>
 <%
