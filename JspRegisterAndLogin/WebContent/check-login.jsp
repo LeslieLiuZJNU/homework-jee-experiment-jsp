@@ -11,7 +11,7 @@
 	
 	//Get hash codes for passwords
 	Integer passwordHashCode=password.hashCode();
-	Integer storedPasswordHashCode=(int)application.getAttribute("passwordOf"+username);
+	Integer storedPasswordHashCode=(Integer)application.getAttribute("passwordOf"+username);
 	
 	//Check login and redirect
 	if(storedPasswordHashCode==null){
