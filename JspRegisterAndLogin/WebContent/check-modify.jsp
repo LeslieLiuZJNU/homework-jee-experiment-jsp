@@ -19,7 +19,7 @@ if (cPassword == null) {
 	response.sendRedirect("modify.jsp");
 } else {
 	Integer cPasswordHashCode = (Integer) cPassword.hashCode();
-	
+
 	//Check if current password is correct
 	if (!storedPasswordHashCode.equals(cPasswordHashCode)) {
 		session.setAttribute("modifyStatus", "wrongCPassword");
